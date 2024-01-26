@@ -6,7 +6,7 @@ function fahrenheitToCelsius(x){
     x=(x-32)*5/9;
    
 
-return parseFloat(x).toFixed(1);
+return x.toFixed(1);
 }
 
 // Sample usage - do not modify
