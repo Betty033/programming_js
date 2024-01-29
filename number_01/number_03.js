@@ -23,7 +23,7 @@ console.log(roundedNum2);
 console.log(sqrtNum1);
 console.log(maxNum);
 
-console.log(typeof roundedNum1); "float"
+console.log(typeof roundedNum1); 
 console.log(typeof roundedNum2);
 console.log(typeof sqrtNum1);
 console.log(typeof maxNum);
