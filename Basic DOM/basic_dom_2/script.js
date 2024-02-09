@@ -20,12 +20,16 @@ function addName() {
     let inputTextList = document.createElement('li');
     const inputFruit = document.getElementById('fruitList');
 
-    inputTextList.append(nameInput.value);
-    inputFruit.appendChild(inputTextList);
+    if (nameInput.value !== "") {
+        inputTextList.append(nameInput.value.trim());
 
-    document.getElementById('fruitInput').value = '';
+        inputFruit.appendChild(inputTextList);
+
+        document.getElementById('fruitInput').value = '';  // nameInput.value='';
+    }
+    else {
+        alert("write a fruit name");
+    }
 }
-
 button.addEventListener('click', addName);
-
 
