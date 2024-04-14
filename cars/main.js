@@ -1,5 +1,6 @@
 'use strict';
-const addCarForm = document.querySelector('#addCar')
+const addCarForm = document.querySelector('#addCar');
+const searchCarForm = document.querySelector('#searchCarForm');
 const cars = [];
 
 class Car {
@@ -50,4 +51,15 @@ const displayTable = () => {
     });
 
 };
+const searchCar = (e) => {
+
+    const licenceQuery = document.querySelector('"search').value;
+    e.preventDefault()
+        .value.trim();
+
+
+    console.log('searchCar is triggered');
+}
 addCarForm.addEventListener('submit', addCar);
+// add event lisenter to the search button without any js in html
+searchCarForm.addEventListener('submit', searchCar);
